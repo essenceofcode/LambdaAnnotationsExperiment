@@ -21,6 +21,6 @@ jobs:
       with:
         dotnet-version: 7.0.x
     - name: Restore dependencies
-      run: src/LambdaAnnotationsExperiment/LambdaAnnotationsExperiment.csproj 
+      run: dotnet restore ./src/LambdaAnnotationsExperiment/LambdaAnnotationsExperiment.csproj 
     - name: Build
-      run: dotnet build src/LambdaAnnotationsExperiment/LambdaAnnotationsExperiment.csproj  --no-restore
+      run: dotnet build ./src/LambdaAnnotationsExperiment/LambdaAnnotationsExperiment.csproj  --no-restore
