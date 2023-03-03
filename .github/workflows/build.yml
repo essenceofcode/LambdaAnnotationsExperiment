@@ -25,6 +25,6 @@ jobs:
     - name: Build
       run: dotnet build ./src/LambdaAnnotationsExperiment/LambdaAnnotationsExperiment.csproj  --no-restore
     - name: Restore dependencies
-      run: dotnet restore ./src/LambdaAnnotationsExperiment/LambdaAnnotationsExperiment.Tests.csproj 
+      run: dotnet restore ./src/LambdaAnnotationsExperiment.Tests/LambdaAnnotationsExperiment.Tests.csproj 
     - name: Build
-      run: dotnet build ./src/LambdaAnnotationsExperiment/LambdaAnnotationsExperiment.Tests.csproj  --no-restore
+      run: dotnet build ./src/LambdaAnnotationsExperiment.Tests/LambdaAnnotationsExperiment.Tests.csproj  --no-restore
