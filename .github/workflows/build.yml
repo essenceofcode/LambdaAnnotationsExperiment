@@ -24,13 +24,6 @@ jobs:
       run: dotnet restore ./src/LambdaAnnotationsExperiment/LambdaAnnotationsExperiment.csproj 
     - name: Build
       run: dotnet build ./src/LambdaAnnotationsExperiment/LambdaAnnotationsExperiment.csproj  --no-restore
-
-  test:
-
-    runs-on: ubuntu-latest
-    
-    needs: [build]
-    steps:
     - name: Restore dependencies
       run: dotnet restore ./test/LambdaAnnotationsExperiment.Tests/LambdaAnnotationsExperiment.Tests.csproj 
     - name: Build
