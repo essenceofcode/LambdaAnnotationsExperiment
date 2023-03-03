@@ -28,3 +28,5 @@ jobs:
       run: dotnet restore ./test/LambdaAnnotationsExperiment.Tests/LambdaAnnotationsExperiment.Tests.csproj 
     - name: Build
       run: dotnet build ./test/LambdaAnnotationsExperiment.Tests/LambdaAnnotationsExperiment.Tests.csproj  --no-restore
+    - name: Test
+      run: dotnet test ./test/LambdaAnnotationsExperiment.Tests/LambdaAnnotationsExperiment.Tests.csproj --no-build --verbosity normal
